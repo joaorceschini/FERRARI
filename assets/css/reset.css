@@ -1,0 +1,29 @@
+:root {
+    --black: #000;
+    --black75: rgba(0, 0, 0, .75);
+    --white: #fff;
+    --white50: #ffffff50;
+    --red: #E32119;
+    --yellow: #FFF100;
+    --green: #00994D;
+    --dark: #343433;
+    --light: #F8F8F8;
+    --header: #E5E3DF80;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, div, article, aside, footer, header, 
+main, nav, section, ul, ol, li, button, figure{
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Open sans';
+    font-style: normal;
+    font-weight: 400;
+}
