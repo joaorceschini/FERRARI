@@ -8,7 +8,7 @@
     min-width: 320px;
     height: 100vh;
     max-height: 800px;
-    background-image: url('/assets/images/index/ferrari-sf90.jpg');
+    background-image: url('../images/index/ferrari-sf90.jpg');
     background-position-x: 80%;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 }
 
 #home header h1 {
-    color: #fff;
+    color: var(--white);
     font-size: 4em;
     font-weight: bold;
     text-align: right;
@@ -34,9 +34,13 @@
 #home .gallery figure {
     width: 100%;
     margin: 0;
-    margin-top: 1.5px;
+    margin-top: 1px;
     position: relative;
     overflow: hidden;
+}
+
+#home .gallery figure img {
+    width: 100%;
 }
 
 #home .gallery figure figcaption {
@@ -58,14 +62,14 @@
 #home .gallery figure figcaption p {
     margin: 0;
     font-size: 12px;
-    color: #ccc;
+    color: var(--grayC);
 }
 
 #home header a {
-    border: #fff solid 2px;
+    border: var(--white) solid 2px;
     border-radius: 8px;
     padding: 10px 32px;
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -86,13 +90,13 @@
 
 #home .inspiration .text h2 {
     font-size: 40px;
-    color: #333;
+    color: var(--gray3);
     text-transform: uppercase;
     margin: 1em 0;
 }
 
 #home .inspiration .text p {
-    color: #555;
+    color: var(--gray5);
     text-align: right;
     max-width: 75vw;
     font-size: 24px;
@@ -100,7 +104,7 @@
 
 #home .inspiration .car {
     position: absolute;
-    background: url('/assets/images/index/ferrari.png');
+    background: url('../images/index/ferrari.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 684px;
@@ -108,4 +112,23 @@
     z-index: 0;
     top: 210px;
     left: -330px;
+}
+
+#home .know {
+    background-color: var(--light);
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 2em;
+}
+
+#home .know h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    color: var(--gray3);
+    margin: 1em 0;
+}
+
+#home .know img {
+    width: 194px;
 }
