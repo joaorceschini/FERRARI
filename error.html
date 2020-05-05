@@ -35,57 +35,35 @@
 
     </header>
     
-    <main id="register" class="page">
-        
-        <div class="page-header">
-            <header>
+    <main id="error" class="page">
 
-                <div class="mask">
-                    <h1>Cadastre-se</h1>
-                </div>
+        <hr class="italy" />
 
-            </header>
-            
-            <hr class="italy" />
+        <div class="columns">
+            <div class="column">
+                <header>
+                    <h1>
+                        <span class="show-desktop"><b>Uno</b>&nbsp; problema ocorrido!</span>
+                        <span class="hide-desktop">Problema ocorrido no <b>Mobi</b>le</span>
+                    </h1>
+                </header>
+            </div>
+
+            <div class="column">
+                <picture>
+
+                    <source srcset="/assets/images/uno.png" media="(min-width: 1200px)" />
+
+                    <source srcset="/assets/images/mobi@2x.png" media="(min-width: 480px)" />
+
+                    <img src="/assets/images/mobi.png" alt="Mobi">
+
+                </picture>
+            </div>
         </div>
 
-        <section>
-            <div class="image"></div>
-
-            <form>
-                <div>
-
-                    <div class="fields">
-                        <div class="field">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                    </div>
-
-                    <div class="fields">
-                        <div class="field">
-                            <label for="birth">Data de Nascimento</label>
-                            <input type="date" name="birth" id="birth">
-                        </div>
-                        <div class="field">
-                            <label for="password">Senha</label>
-                            <input type="password" name="password" id="password">
-                        </div>
-                    </div>
-
-                    <button type="submit">Entrar</button>
-
-                </div>
-                <p>Se você ja possui uma conta, <a href="login.html">clique aqui</a> para fazer login.</p>
-            
-            </form>
-        </section>
-        
     </main>
+
     <footer id="footer">
         <button type='button'>
             <img src="assets/images/keyboard_arrow_up-black-18dp.svg" alt="up">
