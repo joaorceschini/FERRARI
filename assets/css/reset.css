@@ -136,8 +136,27 @@ a:hover {
     text-decoration: none;
 }
 
+.show-desktop {
+    display: none;
+}
+
 @media (min-width: 576px) {
     .page header {
         height: 45vh;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+/* Desktop - telas de 1200px */
+
+@media (min-width: 1200px) {
+    .show-desktop {
+        display: flex;
+    }
+    .hide-desktop {
+        display: none;
     }
 }
