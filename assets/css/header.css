@@ -117,6 +117,7 @@
     }
     #header #logo {
         right: calc(100vw - 200px);
+        top: 17px;
     }
     #btn-open, #btn-close {
         display: none;
