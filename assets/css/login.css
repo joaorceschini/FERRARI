@@ -30,13 +30,16 @@
     }
     #login.page section {
         flex-direction: row;
-        height: calc(100vh - 396px);
+        min-height: calc(100vh - 396px);
     }
     #login.page section .image,
     #login.page section form {
         flex: 1;
         width: initial;
         display: flex;
+    }
+    #login.page section form button {
+        max-width: 100%;
     }
     #login.page section form {
         padding: 30px;

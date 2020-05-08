@@ -24,6 +24,11 @@
     align-items: center;
     top: -35px;
     z-index: 1;
+    cursor: pointer;
+}
+
+#footer button:hover {
+    background-color: (--white);
 }
 
 #footer .columns {
@@ -77,9 +82,6 @@
 }
 
 @media (min-width: 1200px) {
-    #footer {
-        padding-bottom: 0;
-    }
     #footer .columns {
         flex-direction: row;
         justify-content: space-between;

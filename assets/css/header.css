@@ -55,6 +55,10 @@
     border-radius: 6px;
     justify-content: center;
     font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
 }
 
 #header .menu ul {
@@ -113,11 +117,10 @@
 
 @media (min-width: 1200px) {
     #header {
-        height: 100px;
+        height: 75px;
     }
     #header #logo {
         right: calc(100vw - 200px);
-        top: 17px;
     }
     #btn-open, #btn-close {
         display: none;
@@ -153,7 +156,8 @@
         color: var(--black);
     }
     #header .menu .btn-register {
-        min-width: 270px;
-        margin: 1.55em;
+        height: 40px;
+        min-width: 240px;
+        margin-top: 1em;
     }
 }

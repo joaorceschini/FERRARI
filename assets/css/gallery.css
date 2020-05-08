@@ -1,5 +1,6 @@
 #gallery.page header {
     background-image: url('../images/header-gallery.png');
+    background-position: 0;
 }
 
 #gallery.page .photos {
@@ -13,5 +14,46 @@
 @media (min-width: 576px) {
     #gallery.page header {
         background-image: url('../images/header-gallery@2x.png');
+    }
+}
+
+@media (min-width: 992px) {
+    #gallery.page header {
+        background-image: url("/assets/images/header-gallery@3x.png");
+    }
+    #gallery.page .photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 4px;
+    }
+    #gallery.page .photos img {
+        width: 49vw;
+        margin-bottom: 4px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #gallery.page .photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 4px;
+    }
+    #gallery.page .photos img {
+        width: 49vw;
+        padding: 0.15em;
+    }
+}
+
+@media (min-width: 1920px) {
+    #gallery.page .photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 4px;
+    }
+    #gallery.page .photos img {
+        width: 33vw;
     }
 }

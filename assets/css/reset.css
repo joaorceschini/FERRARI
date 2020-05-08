@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body, div, article, aside, footer, header, 
-main, nav, section, ul, ol, li, button, figure{
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure {
     display: flex;
 }
 
@@ -48,8 +48,8 @@ hr.italy {
     padding: 1em;
 }
 
-.page header ul, 
-.page header li, 
+.page header ul,
+.page header li,
 .page header h1 {
     margin: 0;
     padding: 0;
@@ -116,6 +116,7 @@ form button {
     font-weight: bold;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
 }
 
 form button:hover {
@@ -143,12 +144,46 @@ a:hover {
 @media (min-width: 576px) {
     .page header {
         height: 45vh;
+        min-height: 300px;
     }
 }
 
 @media (min-width: 992px) {
-
+    .page .page-header {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .page header .mask {
+        background-color: transparent;
+        align-items: flex-end;
+    }
+    .page header .mask li {
+        font-size: 30px;
+    }
+    .page header .mask h1 {
+        font-size: 100px;
+        text-shadow: 0 3px 6px var(--black15);
+    }
+    form .fields {
+        flex-direction: row;
+    }
+    form .fields .field {
+        margin-right: 1em;
+    }
+    form .fields .field:last-child {
+        margin-right: 0;
+    }
+    form .action a {
+        text-align: right;
+    }
+    form .field textarea {
+        min-height: 250px;
+    }
+    form button {
+        max-width: 340px;
+    }
 }
+
 
 /* Desktop - telas de 1200px */
 

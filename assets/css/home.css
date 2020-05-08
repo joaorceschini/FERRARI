@@ -3,6 +3,12 @@
     margin-top: -80px;
 }
 
+#home hr {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+
 #home header {
     width: 100%;
     min-width: 320px;
@@ -159,7 +165,7 @@
         margin-top: -100px;
     }
     #home hr {
-        top: 100px;
+        top: 75px;
     }
     #home header {
         height: 100vh;
@@ -178,6 +184,9 @@
     }
     #home .inspiration .text {
         align-items: flex-start;
+    }
+    #home .inspiration .text p {
+        text-align: left;
     }
     #home .inspiration .text h2 {
         font-size: 50px;
